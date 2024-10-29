@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Item from "./item";
 
-export default function ItemList({ items }) { // Accept items as a prop
+export default function ItemList({ items }) { 
     const [sortBy, setSortBy] = useState("name");
     const [groupByCategory, setGroupByCategory] = useState(false);
 

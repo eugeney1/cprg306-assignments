@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function NewItem({ onAddItem }) { // Accept the new prop
+export default function NewItem({ onAddItem }) { 
     const [quantity, setQuantity] = useState(1);
     const [name, setName] = useState("");
     const [category, setCategory] = useState("produce");
@@ -18,7 +18,7 @@ export default function NewItem({ onAddItem }) { // Accept the new prop
         e.preventDefault();
         const item = { name, quantity, category };
 
-        onAddItem(item); // Call onAddItem with the new item
+        onAddItem(item); 
 
         setName('');
         setQuantity(1);
